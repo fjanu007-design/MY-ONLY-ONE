@@ -25,11 +25,12 @@
         width: 90%;
         max-width: 900px;
         margin: 0 auto;
-        padding: 55px 20px 80px;
+        padding: 55px 20px 100px;
         text-align: center;
         position: relative;
     }
 
+    /* Floating decorations */
     .heart {
         position: fixed;
         color: #f5a6c7;
@@ -82,6 +83,7 @@
         transform: rotate(-20deg);
     }
 
+    /* Main heading */
     h1 {
         color: #f29abb;
         font-size: 48px;
@@ -89,6 +91,7 @@
         font-weight: 700;
     }
 
+    /* Main letter photo */
     .photo-frame {
         width: 260px;
         height: 330px;
@@ -109,6 +112,7 @@
         display: block;
     }
 
+    /* Main letter */
     .letter {
         text-align: left;
         font-size: 27px;
@@ -121,10 +125,7 @@
         margin: 0 0 22px;
     }
 
-    .meet-section {
-        margin-top: 50px;
-    }
-
+    /* Dividers */
     .divider {
         display: flex;
         align-items: center;
@@ -143,6 +144,11 @@
         height: 2px;
         background: #f5abc8;
         border-radius: 10px;
+    }
+
+    /* Glad That We Met */
+    .meet-section {
+        margin-top: 50px;
     }
 
     .meet-photo-frame {
@@ -205,6 +211,7 @@
         }
     }
 
+    /* Me + You = WE */
     .we-section {
         margin-top: 5px;
     }
@@ -225,6 +232,7 @@
             5px 5px 0 #76b8e8;
     }
 
+    /* Us photo */
     .us-photo-frame {
         width: min(520px, 88%);
         aspect-ratio: 1 / 1;
@@ -274,6 +282,7 @@
         border-radius: 8px;
     }
 
+    /* Me + You letter */
     .future-letter {
         text-align: left;
         font-size: 27px;
@@ -287,9 +296,150 @@
         margin: 0;
     }
 
+    /* ============================= */
+    /* WHERE I BELONG SECTION */
+    /* ============================= */
+
+    .belong-section {
+        margin-top: 5px;
+    }
+
+    .belong-title {
+        margin: 10px 0 35px;
+        color: #f28fb7;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 39px;
+        font-weight: 700;
+        letter-spacing: 1px;
+
+        text-shadow:
+            1px 1px 0 #fff,
+            2px 2px 0 #ffd4e4,
+            4px 4px 0 #f5abc8;
+    }
+
+    /* Her photo - 4:5 portrait */
+    .her-photo-frame {
+        width: min(430px, 82%);
+        aspect-ratio: 4 / 5;
+        margin: 0 auto 55px;
+        padding: 12px;
+        background: #fff;
+
+        border: 3px solid #f3a0c0;
+        border-radius: 12px;
+
+        box-shadow:
+            0 0 0 5px #ffe0eb,
+            7px 7px 0 #f6b2cc,
+            -5px -5px 0 #ffd4e3,
+            0 14px 28px rgba(225, 130, 165, 0.18);
+
+        transform: rotate(1deg);
+        position: relative;
+    }
+
+    .her-photo-frame::before {
+        content: "♡  ♡";
+        position: absolute;
+        top: -29px;
+        left: 50%;
+        transform: translateX(-50%) rotate(-2deg);
+        color: #f3a0c0;
+        font-family: 'Caveat', cursive;
+        font-size: 28px;
+        letter-spacing: 7px;
+    }
+
+    .her-photo-frame::after {
+        content: "♡";
+        position: absolute;
+        bottom: -27px;
+        left: 18px;
+        color: #f3a0c0;
+        font-size: 28px;
+        transform: rotate(-15deg);
+    }
+
+    .her-photo-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 5px;
+    }
+
+    /* Poem */
+    .poem-card {
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 48px 42px 50px;
+        position: relative;
+
+        /* soft pink paper */
+        background:
+            linear-gradient(
+                135deg,
+                rgba(255, 215, 229, 0.72),
+                rgba(255, 235, 242, 0.82)
+            );
+
+        border-radius: 22px;
+        box-shadow:
+            0 5px 18px rgba(230, 145, 175, 0.12),
+            inset 0 0 35px rgba(255, 255, 255, 0.65);
+    }
+
+    /* Pencil-style doodle effect */
+    .poem-card::before {
+        content: "♡  ✦  ♡        ♡  ✦  ♡        ♡  ✦  ♡";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        color: #e9a0bb;
+        opacity: 0.55;
+        font-family: 'Caveat', cursive;
+        font-size: 20px;
+        letter-spacing: 4px;
+        transform: rotate(-1deg);
+        pointer-events: none;
+    }
+
+    .poem-card::after {
+        content: "♡     ✦     ♡     ✦     ♡";
+        position: absolute;
+        bottom: 12px;
+        right: 0;
+        width: 100%;
+        color: #e9a0bb;
+        opacity: 0.55;
+        font-family: 'Caveat', cursive;
+        font-size: 20px;
+        letter-spacing: 5px;
+        transform: rotate(1deg);
+        pointer-events: none;
+    }
+
+    .poem {
+        position: relative;
+        z-index: 2;
+        color: #718d69;
+        font-family: 'Caveat', cursive;
+        font-size: 29px;
+        line-height: 1.55;
+        text-align: center;
+    }
+
+    .poem p {
+        margin: 0;
+    }
+
+    /* Mobile */
     @media (max-width: 600px) {
+
         .page {
-            padding: 40px 15px 60px;
+            padding: 40px 15px 70px;
         }
 
         h1 {
@@ -332,6 +482,29 @@
         .us-photo-frame {
             width: 88%;
         }
+
+        .belong-title {
+            font-size: 31px;
+        }
+
+        .her-photo-frame {
+            width: 82%;
+        }
+
+        .poem-card {
+            padding: 40px 20px 45px;
+        }
+
+        .poem {
+            font-size: 24px;
+            line-height: 1.5;
+        }
+
+        .poem-card::before,
+        .poem-card::after {
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
     }
 </style>
 </head>
@@ -355,6 +528,7 @@
     </div>
 
     <div class="letter">
+
         <p>
             I've tried my best to make this website beautiful. I know it's not perfect as it's my first time making a website with cute stuffs. So yeah 🦭 a tiny gift for you.
         </p>
@@ -366,7 +540,11 @@
         <p>
             But it's okay. We'll do that someday, trust me. I genuinely don't know how to arrange the words, help! Hope you'll understand.
         </p>
+
     </div>
+
+
+    <!-- GLAD THAT WE MET -->
 
     <div class="meet-section">
 
@@ -388,6 +566,9 @@
 
     </div>
 
+
+    <!-- ME + YOU = WE -->
+
     <div class="we-section">
 
         <div class="divider">
@@ -403,9 +584,51 @@
         </div>
 
         <div class="future-letter">
+
             <p>
                 Genuinely speaking, we're so strange. Like strange in a good way. And I'm so glad that I met you. It's been just a year but I'm already planning my future with you lol. If you listen to my plans, you'll probably laugh at me. I feel like I'm so childish but I'm so serious I fear. I love you so much that I cannot think about my future without you in it. So please never give up on me. No matter how hard it gets, please trust me, trust in whatever we have. We'll make it out somehow. And I genuinely want you to open up to me all the time. Don't hold things to yourself. Vent it to me. I'll always listen to you. I don't use any romantic words with you or whatever but baby, I love you so much, way too much it hurts. I want to be the first one you run to, just like I do. I might be not enough for you cuz you deserve the best but I will try my best to improve. I still wonder how i pulled you omg! I'm such a loser and you're a pretty diva. Why do you even love me? I still cannot believe sometimes that you're my girlfriend wtf! But I'm grateful for everything. I'm grateful that you were born and somehow we met and magically we're dating damn! I wanna announce to the whole world that I'm yours and you're mine but fuckers are homophobic anyways. Let's be together for a long time ꒰⁠⑅⁠ᵕ⁠༚⁠ᵕ⁠꒱
             </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- WHERE I BELONG -->
+
+    <div class="belong-section">
+
+        <div class="divider">
+            <span>♡</span>
+        </div>
+
+        <div class="belong-title">
+            Where I belong
+        </div>
+
+        <div class="her-photo-frame">
+            <img src="her.jpg" alt="My favorite person">
+        </div>
+
+        <div class="poem-card">
+
+            <div class="poem">
+
+                <p>
+                    In the quiet light, my world stands still,<br>
+                    Captivated by your touch and gentle grace.<br>
+                    Your eyes hold the starlight no night could fill,<br>
+                    A glowing warmth across your lovely face.<br>
+                    Your lips hold a sweetness, softly spoke,<br>
+                    Where every quiet word feels like a song,<br>
+                    And the dark, tender silk of your cascading hair<br>
+                    Is the only safe haven where I belong.<br>
+                    Happy Birthday, my love, my favorite view.<br>
+                    Every piece of my heart belongs to you.
+                </p>
+
+            </div>
+
         </div>
 
     </div>
