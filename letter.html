@@ -223,7 +223,6 @@
         font-size: 38px;
         font-weight: 700;
         letter-spacing: 1px;
-
         -webkit-text-stroke: 2px #76b8e8;
 
         text-shadow:
@@ -297,7 +296,7 @@
     }
 
     /* ============================= */
-    /* WHERE I BELONG SECTION */
+    /* WHERE I BELONG */
     /* ============================= */
 
     .belong-section {
@@ -318,7 +317,7 @@
             4px 4px 0 #f5abc8;
     }
 
-    /* Her photo - 4:5 portrait */
+    /* Her photo - 4:5 */
     .her-photo-frame {
         width: min(430px, 82%);
         aspect-ratio: 4 / 5;
@@ -376,7 +375,6 @@
         padding: 48px 42px 50px;
         position: relative;
 
-        /* soft pink paper */
         background:
             linear-gradient(
                 135deg,
@@ -385,12 +383,12 @@
             );
 
         border-radius: 22px;
+
         box-shadow:
             0 5px 18px rgba(230, 145, 175, 0.12),
             inset 0 0 35px rgba(255, 255, 255, 0.65);
     }
 
-    /* Pencil-style doodle effect */
     .poem-card::before {
         content: "♡  ✦  ♡        ♡  ✦  ♡        ♡  ✦  ♡";
         position: absolute;
@@ -433,6 +431,216 @@
 
     .poem p {
         margin: 0;
+    }
+
+    /* ============================= */
+    /* A SONG DEDICATED TO YOU */
+    /* ============================= */
+
+    .song-section {
+        margin-top: 5px;
+    }
+
+    .song-title {
+        margin: 10px 0 35px;
+        color: #c43f6d;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 38px;
+        font-weight: 700;
+        letter-spacing: 1px;
+
+        text-shadow:
+            1px 1px 0 #fff,
+            2px 2px 0 #f5c2d3,
+            4px 4px 0 #a92e59;
+    }
+
+    /* Song photo - 3:4 */
+    .song-photo-frame {
+        width: min(430px, 82%);
+        aspect-ratio: 3 / 4;
+        margin: 0 auto 42px;
+        padding: 12px;
+        background: #fff;
+
+        border: 3px solid #c43f6d;
+        border-radius: 10px 17px 12px 18px;
+
+        box-shadow:
+            0 0 0 5px #f4bfd1,
+            7px 7px 0 #d76b91,
+            -5px -5px 0 #f8d1df,
+            0 14px 28px rgba(174, 48, 91, 0.16);
+
+        transform: rotate(-1deg);
+        position: relative;
+    }
+
+    .song-photo-frame::before {
+        content: "♡";
+        position: absolute;
+        top: -28px;
+        right: 22px;
+        color: #c43f6d;
+        font-size: 30px;
+        transform: rotate(15deg);
+    }
+
+    .song-photo-frame::after {
+        content: "✦";
+        position: absolute;
+        bottom: -27px;
+        left: 22px;
+        color: #c43f6d;
+        font-size: 25px;
+        transform: rotate(-10deg);
+    }
+
+    .song-photo-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 6px;
+    }
+
+    /* Spotify song link */
+    .song-link {
+        display: inline-block;
+        text-decoration: none;
+        color: #718d69;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+        letter-spacing: 1px;
+
+        text-shadow:
+            1px 1px 0 #fff,
+            2px 2px 0 #dce9d8,
+            3px 3px 0 #b9d1b2;
+
+        animation: songPulse 1.7s ease-in-out infinite;
+        transition: transform 0.2s ease;
+    }
+
+    .song-link:hover {
+        transform: scale(1.08);
+    }
+
+    @keyframes songPulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.08);
+        }
+    }
+
+    /* ============================= */
+    /* FINAL MESSAGE */
+    /* ============================= */
+
+    .final-section {
+        margin-top: 5px;
+    }
+
+    .final-message {
+        max-width: 760px;
+        margin: 0 auto 50px;
+        color: #4d91c9;
+        font-family: 'Caveat', cursive;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.55;
+        text-align: center;
+
+        text-shadow:
+            1px 1px 0 #fff,
+            2px 2px 0 #d8ecfa;
+    }
+
+    /* Ending photo */
+    .end-photo-frame {
+        width: min(430px, 82%);
+        aspect-ratio: 4 / 5;
+        margin: 0 auto 55px;
+        padding: 12px;
+        background: #fff;
+
+        border: 3px solid #f3a0c0;
+        border-radius: 12px;
+
+        box-shadow:
+            0 0 0 5px #ffe0eb,
+            7px 7px 0 #f6b2cc,
+            -5px -5px 0 #ffd4e3,
+            0 14px 28px rgba(225, 130, 165, 0.18);
+
+        transform: rotate(-1deg);
+        position: relative;
+    }
+
+    .end-photo-frame::before {
+        content: "♡  ♡";
+        position: absolute;
+        top: -29px;
+        left: 50%;
+        transform: translateX(-50%) rotate(2deg);
+        color: #f3a0c0;
+        font-family: 'Caveat', cursive;
+        font-size: 28px;
+        letter-spacing: 7px;
+    }
+
+    .end-photo-frame::after {
+        content: "♡";
+        position: absolute;
+        bottom: -27px;
+        right: 18px;
+        color: #f3a0c0;
+        font-size: 28px;
+        transform: rotate(15deg);
+    }
+
+    .end-photo-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 5px;
+    }
+
+    /* Go back button */
+    .back-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 5px;
+    }
+
+    .back-button {
+        display: inline-block;
+        text-decoration: none;
+        background: #f3a0c0;
+        color: white;
+
+        font-family: 'Quicksand', sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+
+        padding: 11px 22px;
+        border-radius: 12px 18px 10px 16px;
+
+        box-shadow:
+            3px 3px 0 #ffd0e0,
+            0 5px 12px rgba(225, 130, 165, 0.16);
+
+        transition: transform 0.2s ease;
+    }
+
+    .back-button:hover {
+        transform: translateY(-3px);
     }
 
     /* Mobile */
@@ -504,6 +712,32 @@
         .poem-card::after {
             font-size: 16px;
             letter-spacing: 2px;
+        }
+
+        .song-title {
+            font-size: 30px;
+        }
+
+        .song-photo-frame {
+            width: 82%;
+        }
+
+        .song-link {
+            font-size: 29px;
+        }
+
+        .final-message {
+            font-size: 25px;
+            line-height: 1.5;
+        }
+
+        .end-photo-frame {
+            width: 82%;
+        }
+
+        .back-button {
+            font-size: 15px;
+            padding: 10px 18px;
         }
     }
 </style>
@@ -628,6 +862,63 @@
                 </p>
 
             </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- A SONG DEDICATED TO YOU -->
+
+    <div class="song-section">
+
+        <div class="divider">
+            <span>♡</span>
+        </div>
+
+        <div class="song-title">
+            A song dedicated to you
+        </div>
+
+        <div class="song-photo-frame">
+            <img src="song.jpg" alt="A song dedicated to you">
+        </div>
+
+        <a
+            class="song-link"
+            href="https://open.spotify.com/track/62E6iaH9OBWMvGP8cuP3Js?si=GYKPpBd3R6GXtsCtzIM7HQ&utm_source=copy-link"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            คนสุดท้าย
+        </a>
+
+    </div>
+
+
+    <!-- FINAL MESSAGE -->
+
+    <div class="final-section">
+
+        <div class="divider">
+            <span>♡</span>
+        </div>
+
+        <div class="final-message">
+
+            Again, Happy Birthday my love. I hope you liked the whole thing. And I hope this year is gonna be blessed with happiness and you can smile more and I hope I can be a part of your smile. Let me spend your every birthday with you. At last, i wanna ask again, even if I'm not your first one, can I be you last?
+
+        </div>
+
+        <div class="end-photo-frame">
+            <img src="end.jpg" alt="One last special memory">
+        </div>
+
+        <div class="back-container">
+
+            <a href="index.html" class="back-button">
+                go back
+            </a>
 
         </div>
 
